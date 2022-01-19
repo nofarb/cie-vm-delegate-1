@@ -21,5 +21,5 @@ This file is used by the drone aws runner to connect to AWS. Use [AWS EC2 enviro
 5. Install a docker delegate from harness UI and copy the docker delegate yaml to use it in the next step.  
 6. Replace the content of `config/harness-delegate.yml` file with the docker delegate yaml file generated in the prior step. >
 7. Run: `go run main.go`. This will generate vm.tf file which can be used to create the delegate vm.
-8. To create the vm directly, execute `CREATE_VM=true go run main.go'. It is preferable to use step 4 since it allows updating terraform file for vm separately.
+8. To create the vm directly, execute `CREATE_VM=true go run main.go'. It is preferable to use step 6 since it allows updating terraform file for vm separately.
 9. Execute "terraform apply" if VM wasn't created directly. 
